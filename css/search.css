@@ -1,0 +1,121 @@
+/* General styling for body and headers */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the header */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #ff856b;
+}
+
+/* Main content area styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Blog post card styling */
+.blog-post {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    overflow: hidden;   
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 0 0 calc(30% - 20px); /* 3 items per row */
+    max-width: calc(30% - 20px); /* Ensures 3 items per row */
+    box-sizing: border-box;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.blog-post h2 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.blog-post p {
+    padding: 0 15px 15px 15px;
+    font-size: 1em;
+    color: #b0b0b0;
+}
+
+a {
+    text-decoration: none;
+    color: #ff6f61;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1200px) {
+    .blog-post {
+        flex: 0 0 calc(46% - 20px); /* 2 items per row for medium screens */
+        max-width: calc(46% - 20px); /* Ensures 2 items per row */
+    }
+}
+
+@media (max-width: 800px) {
+    .blog-post {
+        flex: 0 0 calc(100% - 20px); /* 1 item per row for small screens */
+        max-width: calc(100% - 20px); /* Ensures 1 item per row */
+    }
+}
