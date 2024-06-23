@@ -1,0 +1,264 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f0f0; /* Light grey background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 12000    px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header nav ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    border-radius: 500px;
+}
+
+header nav ul li.form-wrapper {
+    flex-grow: 1;
+}
+
+header nav ul li form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li form input[type="text"] {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+}
+
+header nav ul li form button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header nav ul li form button:hover {
+    background-color: #222;
+}
+
+header nav ul li .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+header nav ul li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+header nav ul li .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+header nav ul li .dropdown:hover .dropdown-content {
+    display: block;
+}
+header nav ul li .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+main p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+main .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main .profile-container img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+main .profile-container h2 {
+    margin-top: 10px;
+    font-size: 2em;
+    color: #444;
+}
+
+main .profile-container p {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #666;
+}
+
+main .actions {
+    margin-top: 20px;
+}
+
+main .actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+}
+
+main .actions button:hover {
+    background-color: #222;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li.form-wrapper {
+        width: 100%;
+    }
+
+    header nav ul li form {
+        width: 100%;
+    }
+
+    main .profile-container {
+        padding: 0 20px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-30 {
+    padding: 30px;
+}

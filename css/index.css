@@ -1,0 +1,66 @@
+/* index.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-panel {
+    background-color: white; /* Background color for the login panel */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-panel h2 {
+    margin-bottom: 20px;
+}
+
+.login-panel label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+.login-panel input[type="email"],
+.login-panel input[type="password"] {
+    width: calc(100% - 20px); /* Adjusting input width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-panel button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-panel button:hover {
+    background-color: #0056b3;
+}
+
+.login-panel p {
+    margin-top: 10px;
+}
+
+.login-panel p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-panel p a:hover {
+    text-decoration: underline;
+}
